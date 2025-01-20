@@ -11,7 +11,7 @@ namespace starter.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(items);
+            return Ok("Error: This should not return a list."); 
         }
 
         [HttpGet("{id}")]

@@ -13,7 +13,12 @@
     <PackageReference Include="xunit" Version="2.9.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
     <ProjectReference Include="..\starter\starter.csproj" />
-  </ItemGroup>
+  </ItemGroup><PropertyGroup>
+  <CollectCoverage>true</CollectCoverage>
+  <CoverletOutput>$(OutputPath)/coverage.cobertura.xml</CoverletOutput>
+  <CoverletOutputFormat>cobertura</CoverletOutputFormat>
+</PropertyGroup>
+  
 
   <ItemGroup>
     <Using Include="Xunit" />
