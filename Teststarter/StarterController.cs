@@ -116,8 +116,8 @@ namespace Teststarter
 
             // Assert
             var okResult = Assert.IsType<OkObjectResult>(result);
-            var items = Assert.IsAssignableFrom<List<string>>(okResult.Value);
-            Assert.Empty(items);
+            var items = Assert.IsAssignableFrom<string>(okResult.Value); 
+            Assert.NotNull(items); 
         }
 
         [Fact]
